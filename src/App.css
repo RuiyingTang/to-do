@@ -1,0 +1,50 @@
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+}
+.App {
+  padding-top: 30px;
+  width: 50vw;
+}
+
+.container {
+  width: 100%;
+  border: 3px solid black;
+  box-shadow: 3px 3px 4px grey;
+}
+
+li {
+  list-style-type: none;
+  border-bottom: 2px solid grey;
+  padding: 10px;
+}
+
+.todo,
+.controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.controls {
+  padding: 10px;
+  font-size: 12px;
+}
+.controls button {
+  margin: 3px;
+  font-size: 12px;
+  background-color: rgb(47, 47, 91);
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  .controls {
+    display: block;
+    text-align: center;
+  }
+}
